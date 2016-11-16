@@ -47,6 +47,9 @@
 		<weaknesses>
 			<weakness></weakness>
 		</weaknesses>
+		<resistances>
+			<resistance></resistance>
+		</resistances>
 	</defense>
 	
 	<offense>

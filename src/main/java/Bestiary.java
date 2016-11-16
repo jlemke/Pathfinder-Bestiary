@@ -14,8 +14,7 @@ public class Bestiary {
     @GET
     @Produces("application/xml")
     public Response getMessage() {
-        // Return a simple message
-        String output = "Hello World";
+
         return Response.status(200).entity(output).build();
     }
 }
