@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Pathfinder-Bestiary:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="pathfinderbestiary.war">
+      <element id="artifact" artifact-name="Pathfinder-Bestiary:war exploded" />
+    </root>
+  </artifact>
+</component>
