@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/pathfinder_bestiarydb</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">catplanet</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- List the annotated edu.matc.entity class/es -->
+        <mapping class="edu.matc.entity.Aura"/>
+        <mapping class="edu.matc.entity.Beast"/>
+        <mapping class="edu.matc.entity.Sense"/>
+        <mapping class="edu.matc.entity.Subtype"/>
+        <mapping class="edu.matc.entity.ArmorBonus"/>
+        <mapping class="edu.matc.entity.Attack"/>
+        <mapping class="edu.matc.entity.Defense"/>
+        <mapping class="edu.matc.entity.DefensiveAbility"/>
+        <mapping class="edu.matc.entity.Offense"/>
+        <mapping class="edu.matc.entity.SpecialAttack"/>
+        <mapping class="edu.matc.entity.Speed"/>
+        <mapping class="edu.matc.entity.SpellLikeAbility"/>
+        <mapping class="edu.matc.entity.Weakness"/>
+        <mapping class="edu.matc.entity.Ecology"/>
+        <mapping class="edu.matc.entity.Environment"/>
+        <mapping class="edu.matc.entity.Feat"/>
+        <mapping class="edu.matc.entity.Gear"/>
+        <mapping class="edu.matc.entity.Language"/>
+        <mapping class="edu.matc.entity.Organization"/>
+        <mapping class="edu.matc.entity.RacialModifier"/>
+        <mapping class="edu.matc.entity.Skill"/>
+        <mapping class="edu.matc.entity.SpecialAbility"/>
+        <mapping class="edu.matc.entity.SpecialQuality"/>
+        <mapping class="edu.matc.entity.Statistics"/>
+        <mapping class="edu.matc.entity.Treasure"/>
+        <mapping class="edu.matc.entity.PreparedSpell"/>
+
+    </session-factory>
+
+</hibernate-configuration>
